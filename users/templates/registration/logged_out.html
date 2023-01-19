@@ -1,0 +1,20 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+
+<h4><p>You have been successfully logged out. Thank you for your visiting!</p></h4>
+
+{% endblock page_header %}
+
+{% block content %}
+<br><br>
+<h4><p>Now, log in again or go back to the homepage?</p></h4>
+<br>
+<a class="btn btn-lg btn-primary" href="{% url 'users:login' %}"
+role="button">Log in &raquo;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="btn btn-lg btn-primary" href="{% url 'learning_logs:index' %}"
+role="button">Home Page &raquo;</a>
+{% endblock content %}
+
+
